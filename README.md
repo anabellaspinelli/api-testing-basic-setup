@@ -1,4 +1,4 @@
-# API Test Base
+# API Testing, Basic setup
 
 Basic setup for API tests using SuperTest, Mocha, Chai and Mochawesome reporter.
 
