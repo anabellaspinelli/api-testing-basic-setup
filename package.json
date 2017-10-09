@@ -1,26 +1,29 @@
 {
-  "name": "API-tests-base",
+  "name": "api-testing-basic-setup",
   "version": "1.0.0",
-  "description": "Basic setup for nodejs API tests",
-  "main": "tests/acceptance/index.js",
+  "description": "Basic setup for API testing with nodejs",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "chai": "^4.1.2",
+    "supertest": "^3.0.0",
+    "mochawesome": "^2.3.1",
+    "mocha": "^3.4.2"
+  },
   "scripts": {
-    "testReport": "mocha test --opts test/report.opts",
-    "test": "mocha test"
+    "test": "npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:anabellaspinelli/API-tests-base.git"
+    "url": "git+https://github.com/anabellaspinelli/api-testing-basic-setup.git"
   },
-  "author": "",
+  "author": "Anabella Spinelli",
   "license": "ISC",
-  "devDependencies": {
-    "chai": "^4.0.2",
-    "fs": "0.0.1-security",
-    "mocha": "^3.4.2",
-    "mochawesome": "^2.3.0",
-    "supertest": "^3.0.0"
-  }
+  "bugs": {
+    "url": "https://github.com/anabellaspinelli/api-testing-basic-setup/issues"
+  },
+  "homepage": "https://github.com/anabellaspinelli/api-testing-basic-setup#readme"
 }
