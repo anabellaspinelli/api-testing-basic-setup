@@ -1,0 +1,26 @@
+{
+  "name": "API-tests-base",
+  "version": "1.0.0",
+  "description": "Basic setup for nodejs API tests",
+  "main": "tests/acceptance/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "testReport": "mocha test --opts test/report.opts",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:anabellaspinelli/API-tests-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "fs": "0.0.1-security",
+    "mocha": "^3.4.2",
+    "mochawesome": "^2.3.0",
+    "supertest": "^3.0.0"
+  }
+}
